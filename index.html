@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dla Leny ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- TŁO -->
+    <div class="background">
+        <div class="stars"></div>
+
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+    </div>
+
+    <!-- PŁYWAJĄCE SERDUSZKA -->
+    <div id="hearts-container"></div>
+
+
+    <!-- GŁÓWNA STRONA -->
+
+    <main class="main-container">
+
+        <section class="card">
+
+            <div class="top-heart">
+                ♥
+            </div>
+
+            <p class="small-text">
+                Michaś ma do Ciebie pewne pytanie...
+            </p>
+
+            <div class="divider">
+                <span></span>
+                ✦
+                <span></span>
+            </div>
+
+            <h1>
+                Lena...
+            </h1>
+
+            <p class="intro">
+                Zanim przejdziesz dalej,
+                chcę żebyś wiedziała jedną rzecz.
+            </p>
+
+            <p class="message">
+                Nie wiem jeszcze, gdzie dokładnie Cię zabiorę.
+                <br>
+                Nie zdradzę Ci miejsca.
+                <br>
+                Nie powiem Ci, co zaplanowałem.
+                <br><br>
+
+                Ale wiem jedno...
+            </p>
+
+            <div class="pause">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <h2>
+                Chcę spędzić ten czas właśnie z Tobą.
+            </h2>
+
+            <p class="question-intro">
+                Dlatego mam dla Ciebie jedno,
+                <br>
+                całkiem ważne pytanie.
+            </p>
+
+            <button
+                class="reveal-button"
+                id="revealButton"
+            >
+                <span>
+                    Chcę poznać pytanie
+                </span>
+
+                <span class="arrow">
+                    →
+                </span>
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- OKNO Z PYTANIEM -->
+
+    <div
+        class="question-overlay"
+        id="questionOverlay"
+    >
+
+        <div class="question-box">
+
+            <button
+                class="close-button"
+                id="closeButton"
+            >
+                ×
+            </button>
+
+            <div class="question-heart">
+                ♥
+            </div>
+
+            <p class="question-small">
+                Lena, jesteś gotowa?
+            </p>
+
+            <h2>
+                Czy wybierzesz się
+                <br>
+                ze mną na randkę?
+            </h2>
+
+            <p class="unknown-place">
+                <span>✦</span>
+
+                Miejsce pozostaje tajemnicą.
+
+                <span>✦</span>
+            </p>
+
+            <div class="buttons">
+
+                <button
+                    class="yes-button"
+                    id="yesButton"
+                >
+                    Tak ❤️
+                </button>
+
+                <button
+                    class="no-button"
+                    id="noButton"
+                >
+                    Nie
+                </button>
+
+            </div>
+
+            <p
+                class="hint"
+                id="hint"
+            >
+                Wybierz odpowiedź...
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- EKRAN PRZEJŚCIOWY -->
+
+    <div
+        class="loading-screen"
+        id="loadingScreen"
+    >
+
+        <div class="loading-content">
+
+            <div class="loading-heart">
+                ♥
+            </div>
+
+            <p>
+                Chwila...
+            </p>
+
+            <small>
+                Michaś właśnie czeka na odpowiedź...
+            </small>
+
+            <div class="loader">
+                <div></div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+
+
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Szczęśliwy Michaś ❤️</title>
+
+    <link
+        rel="stylesheet"
+        href="result.css"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+<body>
+
+    <div class="result-background"></div>
+
+    <div class="result-container">
+
+        <div class="result-card happy">
+
+            <div class="big-emoji">
+                😊
+            </div>
+
+            <div class="tiny-hearts">
+                ♥　♡　♥
+            </div>
+
+            <p class="overline">
+                NAJLEPSZA WIADOMOŚĆ
+            </p>
+
+            <h1>
+                Szczęśliwy<br>
+                Michaś
+            </h1>
+
+            <div class="line"></div>
+
+            <p class="result-text">
+                Lena powiedziała „tak”.
+            </p>
+
+            <p class="result-subtext">
+
+                No i stało się...
+
+                <br><br>
+
+                Michaś właśnie został
+                najszczęśliwszym człowiekiem
+                na świecie.
+
+                <br><br>
+
+                Teraz pozostaje tylko
+                przygotować się na randkę,
+                której miejsce nadal
+                pozostaje tajemnicą. ❤️
+
+            </p>
+
+            <div class="secret">
+
+                <span>✦</span>
+
+                miejsce pozostaje tajemnicą
+
+                <span>✦</span>
+
+            </div>
+
+            <p class="signature">
+                — Michaś ❤️
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        function createHeart() {
+
+            const heart =
+                document.createElement("div");
+
+            heart.className =
+                "result-heart";
+
+            heart.innerHTML =
+                Math.random() > .5
+                    ? "♥"
+                    : "♡";
+
+            heart.style.left =
+                Math.random() * 100 +
+                "vw";
+
+            heart.style.animationDuration =
+                (5 + Math.random() * 6) +
+                "s";
+
+            document.body.appendChild(
+                heart
+            );
+
+            setTimeout(() => {
+
+                heart.remove();
+
+            }, 12000);
+
+        }
+
+
+        setInterval(
+            createHeart,
+            500
+        );
+
+    </script>
+
+</body>
+
+</html>
